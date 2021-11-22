@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <h2> This is my Music Website</h2>
+        <h5> Login:</h5>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <div class="container my-2">
+   
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token%}
+            <div>
+            
+                <label style="color: teal;font-weight: 500;" for="firstname" >{{obj.as_p}}</label>
+                    <input type="submit" name="submit">
+                    <br>
+            </div> 
+            
+            <div class="d-grid gap-2">
+                <button  type="button" class="btn btn-primary btn-lg btn-block my-2">
+                    <a style="color:black;" href="{% url 'dashboard' %}" >Dashboard</a>
+                </button>
+            </div
+        </form>
+    </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
